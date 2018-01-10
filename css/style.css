@@ -27,7 +27,11 @@ body {
   font-family: 'Helvetica Nuue', Arial, Helvetica, sans-serif;
   font-size: 14px;
   color: #373737;
-  margin-bottom: 20px;
+}
+
+a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .clear {
   float: none;
@@ -40,7 +44,7 @@ body {
 
 /* header */
 .header {
-    padding: 40px 0;
+    padding: 35px 0;
 }
 .header .logo {
   float: left;
@@ -60,7 +64,7 @@ body {
 }
 .header .navigation ul li a{
   display: inline-block;
-  padding: 25px;
+  padding: 20px 25px;
   text-transform: uppercase;
   color: #373737;
   text-decoration: none;
@@ -124,7 +128,7 @@ body {
   width: 45%;
   color: #fff;
 }
-.content-list .list-services:last-child {
+.content-list .list-services.last {
   float: right;
 }
 .content-list .list-services h2 {
@@ -136,6 +140,7 @@ body {
 }
 .content-list .list-services .text {
   line-height: 25px;
+  margin-bottom: 20px;
 }
 .content-list .list-services .button a {
   display: inline-block;
@@ -145,4 +150,62 @@ body {
   color: #fff;
   text-transform: uppercase;
   font-family: "Web-Raleway";
+}
+
+/* Notification */
+
+.notification {
+  background: #d7d7d7;
+  padding: 25px 0;
+  margin-top: 30px;
+}
+.notification h2 {
+  font-family: "Web-Raleway-Bold";
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.notification h3 {
+  margin-top: 0;
+  font-family: "Web-Raleway";
+  font-size: 24px;
+  font-weight: normal;
+}
+.notification .left-content {
+  float: left;
+}
+.notification .right-content {
+  float: right;
+  padding-top: 35px;
+}
+.notification .large-btn {
+  display: inline-block;
+  background: #0a63d2;
+  font-family: "Web-Raleway-Bold";
+  font-size: 24px;
+  padding: 18px 55px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* footer */
+
+.footer {
+  background: #373737;
+  padding: 40px 0;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Web-Raleway";
+}
+
+/* hover all btn*/
+.btn-primary:hover, .content-list .list-services .button a:hover {
+  background: #fff;
+  color: #0b64cd;
+}
+
+.notification .large-btn:hover {
+  background: #373737;
 }
